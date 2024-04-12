@@ -59,7 +59,6 @@ describe('CartService', () => {
     const mockProductId = 1;
 
     service.deleteProduct(mockProductId).subscribe(() => {
-      // Verificar que la solicitud DELETE se haya hecho correctamente
       expect(routerSpy.navigate).toHaveBeenCalledWith(['/cart']);
     });
 
@@ -78,7 +77,6 @@ describe('CartService', () => {
     };
 
     service.updateProduct(mockCart).subscribe(() => {
-      // Verificar que la solicitud PUT se haya hecho correctamente
       expect(routerSpy.navigate).toHaveBeenCalledWith(['/cart']);
     });
 
