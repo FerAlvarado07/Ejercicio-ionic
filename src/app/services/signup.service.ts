@@ -19,6 +19,7 @@ export class SignupService {
   }
 
   createUser(name: string, email: string, password: string) {
+    localStorage.setItem('token', 'token');
     const users = this.http.get<any>(this.apiUsers);
     users.subscribe((users) => {
       let maxId = -Infinity;

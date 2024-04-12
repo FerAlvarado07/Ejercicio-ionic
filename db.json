@@ -41,12 +41,6 @@
       "name": "Pedro",
       "password": "456",
       "email": "pedro@email.com"
-    },
-    {
-      "id": "8",
-      "name": "Jesus",
-      "password": "12345",
-      "email": "jesus@email.com"
     }
   ],
   "products": [
@@ -101,27 +95,5 @@
       "description": "Esto es la descripcion del producto"
     }
   ],
-  "cart": [
-    {
-      "id": 1,
-      "userId": "1",
-      "name": "Jitomate",
-      "description": "Esto es la descripcion del producto",
-      "quantity": 1
-    },
-    {
-      "id": 2,
-      "userId": "1",
-      "name": "Cebolla",
-      "description": "Esto es la descripcion del producto",
-      "quantity": 1
-    },
-    {
-      "id": 3,
-      "userId": "1",
-      "name": "Sandia",
-      "description": "Esto es la descripcion del producto",
-      "quantity": 1
-    }
-  ]
+  "cart": []
 }
