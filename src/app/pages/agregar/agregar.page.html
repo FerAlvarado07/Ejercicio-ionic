@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>agregar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" fullscreen>
+  <div class="signup-container">
+    <form [formGroup]="form" class="signup-form">
+      <ion-item lines="none">
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input type="text" formControlName="name" name="name"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label position="floating">Descripción</ion-label>
+        <ion-input
+          type="text"
+          formControlName="description"
+          name="description"
+        ></ion-input>
+      </ion-item>
+
+      <ion-button
+        (click)="addProduct()"
+        [disabled]="form.invalid"
+        class="signup-button"
+        >Agregar al inventario</ion-button
+      >
+    </form>
+  </div>
+</ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button (click)="redirectToHome()">
+    <ion-icon name="storefront-outline"></ion-icon>
+    Productos
+  </ion-tab-button>
+  <ion-tab-button (click)="redirectToCart()">
+    <ion-icon name="cart"></ion-icon>
+    Carrito
+  </ion-tab-button>
+  <ion-tab-button (click)="redirectToLogin()">
+    <ion-icon name="log-out-outline"></ion-icon>
+    Cerrar sesión
+  </ion-tab-button>
+</ion-tab-bar>

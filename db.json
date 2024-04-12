@@ -1,0 +1,127 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Daniel",
+      "password": "123",
+      "email": "daniel@email.com"
+    },
+    {
+      "id": "2",
+      "name": "Maria",
+      "password": "123",
+      "email": "maria@email.com"
+    },
+    {
+      "id": "3",
+      "name": "Carlos",
+      "password": "123",
+      "email": "carlos@email.com"
+    },
+    {
+      "id": "4",
+      "name": "Juan",
+      "password": "123",
+      "email": "juan@email.com"
+    },
+    {
+      "id": "5",
+      "name": "Teresa",
+      "password": "123",
+      "email": "teresa@email.com"
+    },
+    {
+      "id": "6",
+      "name": "Edith",
+      "password": "456",
+      "email": "edith@email.com"
+    },
+    {
+      "id": "7",
+      "name": "Pedro",
+      "password": "456",
+      "email": "pedro@email.com"
+    },
+    {
+      "id": "8",
+      "name": "Jesus",
+      "password": "12345",
+      "email": "jesus@email.com"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Manzana",
+      "description": "Esto es la descripcion del producto"
+    },
+    {
+      "id": "2",
+      "name": "Zanahorita",
+      "description": "Esto es la descripcion del producto"
+    },
+    {
+      "id": "3",
+      "name": "Papa",
+      "description": "Esto es la descripcion del producto"
+    },
+    {
+      "id": "4",
+      "name": "Jitomate",
+      "description": "Esto es la descripcion del producto"
+    },
+    {
+      "id": "5",
+      "name": "Ajo",
+      "description": "Esto es la descripcion del producto"
+    },
+    {
+      "id": "6",
+      "name": "Cebolla",
+      "description": "Esto es la descripcion del producto"
+    },
+    {
+      "id": "7",
+      "name": "Sandia",
+      "description": "Esto es la descripcion del producto"
+    },
+    {
+      "id": "8",
+      "name": "Papaya",
+      "description": "Esto es la descripcion del producto"
+    },
+    {
+      "id": "9",
+      "name": "Platano",
+      "description": "Esto es la descripcion del producto"
+    },
+    {
+      "id": "10",
+      "name": "Apio",
+      "description": "Esto es la descripcion del producto"
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "userId": "1",
+      "name": "Jitomate",
+      "description": "Esto es la descripcion del producto",
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "userId": "1",
+      "name": "Cebolla",
+      "description": "Esto es la descripcion del producto",
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "userId": "1",
+      "name": "Sandia",
+      "description": "Esto es la descripcion del producto",
+      "quantity": 1
+    }
+  ]
+}

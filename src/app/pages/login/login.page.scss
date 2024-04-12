@@ -1,0 +1,36 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-form {
+  padding: 30px;
+  background-color: rgb(39, 38, 38);
+  text-align: center;
+  border-radius: 20px;
+}
+
+ion-item {
+  margin: 10px;
+  min-width: 300px;
+  border-radius: 5px;
+}
+
+ion-button {
+  min-width: 250px;
+  margin-top: 20px;
+  --background: linear-gradient(to right, #4e54c8, #8f94fb);
+  --border-radius: 20px;
+  font-weight: bold;
+}
+
+.signup-container {
+  margin: 20px;
+}
+
+.signup:hover {
+  cursor: pointer;
+  color: #4e54c8;
+}

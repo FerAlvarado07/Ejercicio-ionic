@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Carrito</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Carrito</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ul>
+    <li *ngFor="let item of cart">
+      <div class="cart-item">
+        <div class="label">Nombre:</div>
+        <div class="name-item">{{item.name}}</div>
+
+        <div class="label">Descripción:</div>
+        <div class="description-item">{{item.description}}</div>
+
+        <div class="label">Cantidad:</div>
+        <div class="quantity-item">{{item.quantity}}</div>
+
+        <ion-button (click)="deleteProduct(item)" color="danger"
+          >Eliminar</ion-button
+        >
+      </div>
+    </li>
+  </ul>
+  <div class="NoProducts" *ngIf="cart.length === 0">
+    No hay productos en el carrito
+  </div>
+</ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button (click)="redirectToHome()">
+    <ion-icon name="storefront-outline"></ion-icon>
+    Productos
+  </ion-tab-button>
+  <ion-tab-button (click)="redirectToCart()" selected>
+    <ion-icon name="cart"></ion-icon>
+    Carrito
+  </ion-tab-button>
+  <ion-tab-button (click)="redirectToLogin()">
+    <ion-icon name="log-out-outline"></ion-icon>
+    Cerrar sesión
+  </ion-tab-button>
+</ion-tab-bar>

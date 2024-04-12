@@ -1,0 +1,14 @@
+.cart-item {
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.NoProducts {
+  color: red;
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" fullscreen>
+  <div class="login-container">
+    <form [formGroup]="form" class="login-form">
+      <ion-item lines="none">
+        <ion-label position="floating">Correo electrónico</ion-label>
+        <ion-input
+          type="email"
+          formControlName="email"
+          name="email"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input
+          type="password"
+          formControlName="password"
+          name="password"
+        ></ion-input>
+      </ion-item>
+      <div *ngIf="error" style="color: red">
+        <p>Usuario o contraseña incorrecto</p>
+      </div>
+
+      <ion-button
+        (click)="login()"
+        [disabled]="form.invalid"
+        class="login-button"
+        >Iniciar sesión</ion-button
+      >
+      <div class="signup-container">
+        <p class="signup" (click)="redirectSignup()">Registrarse</p>
+      </div>
+    </form>
+  </div>
+</ion-content>

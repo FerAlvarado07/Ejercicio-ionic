@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="products-container">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">home</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <!--<ion-button (click)="addProduct()">Agregar producto al inventario</ion-button>-->
+
+    <ul>
+      <li *ngFor="let item of products">
+        <div class="cart-item">
+          <div class="name-item">{{item.name}}</div>
+          <div class="description-item">{{item.description}}</div>
+
+          <ion-button id="btn" (click)="addToCart(item)"
+            >Añadir al carrito</ion-button
+          >
+        </div>
+      </li>
+    </ul>
+  </div>
+</ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button (click)="redirectToHome()">
+    <ion-icon name="storefront-outline"></ion-icon>
+    Productos
+  </ion-tab-button>
+  <ion-tab-button (click)="redirectToCart()">
+    <ion-icon name="cart"></ion-icon>
+    Carrito
+  </ion-tab-button>
+  <ion-tab-button (click)="redirectToLogin()">
+    <ion-icon name="log-out-outline"></ion-icon>
+    Cerrar sesión
+  </ion-tab-button>
+</ion-tab-bar>

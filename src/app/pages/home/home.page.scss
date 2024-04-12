@@ -1,0 +1,51 @@
+/* Estilos para el contenedor de productos */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Tres columnas con tamaño mínimo de 250px */
+  gap: 20px; /* Espacio entre productos */
+}
+
+/* Estilos para cada producto */
+.cart-item {
+  display: flex;
+  flex-direction: column; /* Para que cada producto esté en un cuadrado */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc; /* Borde para cada cuadrado */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.name-item {
+  font-weight: bold;
+}
+
+.description-item {
+  color: #666;
+}
+
+/* Estilos para los botones de añadir al carrito */
+#btn {
+  --color: #fff; /* Color del texto de los botones */
+  --background: #007bff; /* Color de fondo de los botones */
+}
+
+/* Estilos para la barra de pestañas */
+ion-tab-bar {
+  --ion-background-color: #fff; /* Color de fondo de la barra de pestañas */
+  border-top: 1px solid #ccc;
+}
+
+ion-tab-button {
+  --color-selected: #007bff; /* Color del botón seleccionado */
+  --color: #666; /* Color del botón no seleccionado */
+}
+
+/* Estilos para el título */
+ion-title {
+  font-weight: bold;
+  color: #007bff; /* Color del título */
+}
